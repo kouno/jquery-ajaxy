@@ -4081,7 +4081,7 @@ String.prototype.queryStringToJSON = String.prototype.queryStringToJSON || funct
 				// --------------------------
 				
 				// URLs
-				Ajaxy.options.root_url = (Ajaxy.options.root_url || document.location.protocol.toString()+'//'+document.location.hostname.toString()).replace(/\/+$/, '')+'/';
+				Ajaxy.options.root_url = (Ajaxy.options.root_url || document.location.protocol.toString()+'//'+document.location.host.toString()).replace(/\/+$/, '')+'/';
 				Ajaxy.options.base_url = (Ajaxy.options.base_url || '');
 				Ajaxy.options.relative_url = Ajaxy.extractState(Ajaxy.options.relative_url ||  document.location.pathname.toString());
 				
